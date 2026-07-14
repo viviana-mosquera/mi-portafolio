@@ -11,9 +11,36 @@ header {
     background-color: #2c3e50;
     color: white;
     padding: 2rem;
-    text-align: center;
+    display: flex;         /* Activa el diseño en línea horizontal */
+    align-items: center;   /* Centra la foto verticalmente con el texto */
+    gap: 30px;             /* Deja un espacio genial de separación entre la foto y el texto */
+}
+/* Estilos de la foto redonda */
+.foto-perfil {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #3498db;
 }
 
+/* Alineación de los textos al lado de la foto */
+.header-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    text-align: left;      /* Alinea tus textos a la izquierda al lado de la foto */
+}
+
+.header-textos h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header-textos p {
+    margin: 0;
+    font-size: 1.2rem;
+}
 main {
     max-width: 800px;
     margin: 2rem auto;
